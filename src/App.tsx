@@ -51,7 +51,12 @@ const App = () => {
     }, [meetId])
 
     return (
-        <div ref={meetContainerRef} style={{width: "100vw", height: "100vh"}}></div>
+        <div className="app">
+            <header className="app-header">
+                <span className="app-logo">meet</span>
+            </header>
+            <div ref={meetContainerRef} className="app-meet"></div>
+        </div>
     )
 }
 
